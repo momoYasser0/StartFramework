@@ -46,3 +46,17 @@
   bottom: -28px;
   z-index: -1;
 }
+
+@media screen and (max-width:992px) {
+  form {
+    width: 75% !important;
+  }
+
+}
+
+@media screen and (max-width:767px) {
+  form {
+    width: 100% !important;
+  }
+
+}

@@ -1,5 +1,5 @@
 <div class="contact" [style.color]='"rgb(44, 62, 80)"'>
-  <div class="container w-50">
+  <div class="container">
     <div class="star-content my-3 text-center ">
       <h2 class="text-uppercase fw-bolder fs-1">Contact Section</h2>
       <div class="stars d-flex justify-content-center align-items-center m-3">
@@ -30,12 +30,12 @@
       <button class="btn btn-success">Submit</button>
     </div> -->
 
-    <form>
+    <form class="mx-auto w-50 p-3">
       <div class="input  mb-2">
         <label for="name" class="fw-bold" #name>User Name
           :</label>
         <input id="name" type="text" class="form-control" placeholder="User Name" (focus)="showLabel(name)"
-          (blur)="HideLabel(name)" >
+          (blur)="HideLabel(name)">
 
       </div>
       <div class="input  mb-2">
