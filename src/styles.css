@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-bg-color: #2c3e50;
+  --router-bg-color: #1ABC9C;
+}
+
+a {
+  color: inherit !important;
+}
+
+.font-color {
+  background-color: rgb(44, 62, 80);
+}
+
+.bg-btn {
+  background-color: var(--router-bg-color);
+  border-radius: 10px;
+  /* color: #fff; */
+}
+
+.stars i {
+  animation: 1.5s rotate;
+  animation-timing-function: linear;
+}
+
+.stars span {
+  height: 4px;
+  width: 90px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,11 @@
+.about {
+  background-color: var(--router-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 550px;
+}
+
+.stars span {
+  background-color: #fff;
+}

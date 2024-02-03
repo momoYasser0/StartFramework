@@ -1,0 +1,17 @@
+.home {
+  background-color: var(--router-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 550px;
+
+
+}
+
+.home img {
+  width: 250px;
+}
+
+.stars span {
+  background-color: white;
+}

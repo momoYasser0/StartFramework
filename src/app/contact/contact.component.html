@@ -1,0 +1,59 @@
+<div class="contact" [style.color]='"rgb(44, 62, 80)"'>
+  <div class="container w-50">
+    <div class="star-content my-3 text-center ">
+      <h2 class="text-uppercase fw-bolder fs-1">Contact Section</h2>
+      <div class="stars d-flex justify-content-center align-items-center m-3">
+        <span></span>
+        <i class="fa-solid fa-star px-3"></i>
+        <span></span>
+      </div>
+    </div>
+    <!-- <div class="form">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="userName" placeholder="User Name" [(ngModel)]="userName">
+        <label for="userName">User Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="userAge" placeholder="User Age" [(ngModel)]="userAge">
+        <label for="userAge">User Age</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="userEmail" placeholder="User Email" [(ngModel)]="userEmail">
+        <label for="userEmail">User Email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="userPW" placeholder="User Password  "
+          [(ngModel)]="userPassword">
+        <label for="userPW">User Password</label>
+      </div>
+
+      <button class="btn btn-success">Submit</button>
+    </div> -->
+
+    <form>
+      <div class="input  mb-2">
+        <label for="name" class="fw-bold" #name>User Name
+          :</label>
+        <input id="name" type="text" class="form-control" placeholder="User Name" (focus)="showLabel(name)"
+          (blur)="HideLabel(name)" >
+
+      </div>
+      <div class="input  mb-2">
+        <label for="age" class=" fw-bold" #age>User Age :</label>
+        <input id="age" type="number" class="form-control" placeholder="User age" (focus)="showLabel(age)"
+          (blur)="HideLabel(age)">
+      </div>
+      <div class="input  mb-2">
+        <label for="email" class=" fw-bold" #email>User Email :</label>
+        <input id="email" type="email" class="form-control   " placeholder="User email" (focus)="showLabel(email)"
+          (blur)="HideLabel(email)">
+      </div>
+      <div class="input  mb-3">
+        <label for="pass" class=" fw-bold" #password>User Password :</label>
+        <input id="pass" type="password" class="form-control " placeholder="User password" (focus)="showLabel(password)"
+          (blur)="HideLabel(password)">
+      </div>
+      <button type="button" class="btn btn-success ">Send Message</button>
+    </form>
+  </div>
+</div>
